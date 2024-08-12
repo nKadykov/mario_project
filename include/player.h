@@ -21,7 +21,7 @@ public:
     void decreaseHealth();
     bool ifAlive() const;
     
-    void draw(sf::RenderWindow&) const;
+    void draw(sf::RenderWindow*) const;
     void update(const sf::Time& dt);
 private:
     sf::Vector2f player_position_;
@@ -29,7 +29,7 @@ private:
     sf::Sprite player_sprite_;
     float player_speed_ = 700.0f;
     bool player_moving_left_ = false;
-    bool player_moving_right = false;
+    bool player_moving_right_ = false;
     int player_health_ = 4;
     bool is_alive_ = true;
 };
