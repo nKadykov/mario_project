@@ -11,7 +11,7 @@ public:
     Gold& operator=(Gold&&) = default;
     ~Gold() = default;
 
-    void setSprite(sf::Sprite&);
+    void setSprite(const sf::Sprite&);
     void setPosition(int x, int y);
 
     sf::Sprite getSprite();
